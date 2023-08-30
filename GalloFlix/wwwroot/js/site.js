@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 showLoading();
         })
     }
-});
+})
 
 (() => {
     'use strict';
@@ -34,4 +34,4 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('#sidebar').classList.toggle('d-none')
         })
     }
-})()
+})();

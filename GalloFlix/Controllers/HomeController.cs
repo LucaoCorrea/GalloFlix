@@ -23,7 +23,7 @@ public class HomeController : Controller
         return View(movies);
     }
 
-        public IActionResult Movie(int? id)
+    public IActionResult Movie(int? id)
     {
         var movie = _context.Movies
             .Where(m => m.Id == id)
@@ -32,7 +32,6 @@ public class HomeController : Controller
             .SingleOrDefault();
         return View(movie);
     }
-
 
     public IActionResult Privacy()
     {
